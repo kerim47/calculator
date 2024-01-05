@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div class="d-flex justify-content-center">
-      <textarea name="display" id="display" cols="10" rows="10" disabled>Results:</textarea>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="row justify-content-center mt-4 h1">YOBU-CE GIT-GITHUB</div>
+  <div class="row justify-content-center">
+    <button type="button" class="btn btn-success mr-2" id="btnId1">1</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId2">2</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId3">3</button>
+    <button type="button" class="btn btn-success mr-2" id="btnIdMultiply">*</button>
+  </div>
+  <div class="row justify-content-center mt-2">
+    <button type="button" class="btn btn-success mr-2" id="btnId4">4</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId5">5</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId6">6</button>
+    <button type="button" class="btn btn-success mr-2" id="btnIdDivide">/</button>
+  </div>
+  <div class="row justify-content-center mt-2">
+    <button type="button" class="btn btn-success mr-2" id="btnId7">7</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId8">8</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId9">9</button>
+    <button type="button" class="btn btn-success mr-2" id="btnIdSubtract">-</button>
+  </div>
+  <div class="row justify-content-center mt-2">
+    <button type="button" class="btn btn-success mr-2" id="btnIdBack">X</button>
+    <button type="button" class="btn btn-success mr-2" id="btnId0">0</button>
+    <button type="button" class="btn btn-success mr-2" id="btnIdAC">AC</button>
+    <button type="button" class="btn btn-success mr-2" id="btnIdAdd">+</button>
+  </div>
+  
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="input-group mb-1">
+        <input type="text" class="form-control" placeholder="Result" aria-label="Recipient's username" aria-describedby="basic-addon2" id="values">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="btnId">Sonuçları Gör</button>
+        </div>
+      </div>
     </div>
-  </body>
-  <script type="module" src="./calculator.js"></script>
-  <script type="module" src="./toplama.js"></script>
-  <script type="module" src="./carpma.js"></script>
-  <script type="module" src="./bolme.js"></script>
+    <div class="row justify-content-center h3" id="result">
+      Result :
+    </div>
+  </div>
+
+  <script>
+
+  </script>
+
+  <script type="module" src="./src/calculator.js"></script>
+
+</body>
+
 </html>
